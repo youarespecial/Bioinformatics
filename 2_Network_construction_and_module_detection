@@ -3,9 +3,6 @@
 #  2. Network construction and module detection(here use one-step, and also have step by step and block-wise network)
 #
 #=====================================================================================
-
-setwd(workingDir); 
-# Load the WGCNA package
 library(WGCNA)
 
 # Preset everything. The following setting is important, do not omit.***#
@@ -17,8 +14,8 @@ options(stringsAsFactors = FALSE);
 # Any error here may be ignored but you may want to update WGCNA if you see one.
 # Caution: skip this line if you run RStudio or other third-party R environments. 
 # See note above.
-enableWGCNAThreads()
-
+# enableWGCNAThreads()
+allowWGCNAThreads()
 #*** Load the data saved in the first part  ***#
 #------------------------------------------------------------------------------------#
 
